@@ -37,9 +37,9 @@ public class Inicial extends Activity {
                 byte[] img = saida.toByteArray();
                 result = dao.insereDado(nome.getText().toString(),dono.getText().toString(),img);
                 Toast.makeText(getApplicationContext(), result, Toast.LENGTH_LONG).show();
-                setContentView(R.layout.layout_carros);
 
-
+                Intent it = new Intent(Inicial.this, ListaCarros.class);
+                startActivity(it);
             }
         });
 
