@@ -44,7 +44,7 @@ public class CarrosAdapter extends ArrayAdapter<Carro> {
         }
 
         nome = (TextView)view.findViewById(R.id.textView);
-        dono = (TextView)view.findViewById(R.id.textView2);
+        dono = (TextView)view.findViewById(R.id.textView3);
         foto = (ImageView)view.findViewById(R.id.imageView);
 
         carro = lista.get(position);
